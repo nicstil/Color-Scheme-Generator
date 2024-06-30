@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Color Scheme Generator</title>
+  </head>
+  <body>
+    <main>
+      <section class="color-scheme-selection-section">
+        <div class="color-scheme-selection">
+          <input type="color" id="favcolor" name="favcolor" value="#ff0000" />
+          <select name="schemes" id="schemes">
+            <option value="monochrome" class="dropDown-bold" id="monochrome">
+              Monochrome
+            </option>
+            <option
+              value="monochrome-dark"
+              class="dropDown"
+              id="monochrome-dark"
+            >
+              Monochrome-dark
+            </option>
+            <option
+              value="monochrome-light"
+              class="dropDown"
+              id="monochrome-light"
+            >
+              Monochrome-light
+            </option>
+            <option value="analogic" class="dropDown" id="analogic">
+              Analogic
+            </option>
+            <option value="complement" class="dropDown" id="complement">
+              Complement
+            </option>
+            <option
+              value="analogic-complement"
+              class="dropDown"
+              id="analogic-complement"
+            >
+              Analogic-complement
+            </option>
+            <option value="triad" class="dropDown" id="triad">Triad</option>
+          </select>
+          <button id="getColorScheme" class="get-btn">Get color scheme</button>
+        </div>
+      </section>
+      <section class="color-strips-section">
+        <div class="color-strip-container">
+          <canvas class="color-strip color0"></canvas>
+          <canvas class="color-strip color1"></canvas>
+          <canvas class="color-strip color2"></canvas>
+          <canvas class="color-strip color3"></canvas>
+          <canvas class="color-strip color4"></canvas>
+        </div>
+      </section>
+      <section class="hex-codes-section">
+        <div class="hex-codes">
+          <span id="hex-code-0" class="hex-code">#F55A5A</span>
+          <span id="hex-code-1" class="hex-code">#2B283A</span>
+          <span id="hex-code-2" class="hex-code">#FBF3AB</span>
+          <span id="hex-code-3" class="hex-code">#AAD1B6</span>
+          <span id="hex-code-4" class="hex-code">#A626D3</span>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
